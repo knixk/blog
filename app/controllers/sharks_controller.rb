@@ -1,5 +1,5 @@
 class SharksController < ApplicationController
-  before_action :set_shark, only: %i[ show edit update destroy ]
+  before_action :set_shark, only: %i[show edit update destroy]
 
   # GET /sharks or /sharks.json
   def index
@@ -61,23 +61,38 @@ class SharksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_shark
-      @shark = Shark.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def shark_params
-      params.require(:shark).permit(:name, :facts)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_shark
+    @shark = Shark.find(params[:id])
+  end
 
-    # Track event using AmplitudeAPI
-    def track_event(event_name, shark)
-      event_properties = {
+  # Only allow a list of trusted parameters through.
+  def shark_params
+    params.require(:shark).permit(:name, :facts)
+  end
+
+  # Track event using AmplitudeAPI
+  def track_event(event_name, shark)
+    event = AmplitudeAPI::Event.new({
+      user_id: "adsasd343f24234123f34",
+      event_type: event_name,
+      time: Time.now.to_i * 1000, # Amplitude expects time in milliseconds
+      insert_id: SecureRandom.uuid, # Generate a unique insert ID
+      event_properties: {
         shark_id: shark.id,
-        shark_name: shark.name,
+        shark_name: shark.name, 
         facts: shark.facts
       }
-      AMPLITUDE_CLIENT.track_event(user_id: current_user.id, event_type: event_name, event_properties: event_properties)
+    })
+
+    print("<---- LOG ----> ")
+    p event
+
+    begin
+      AmplitudeAPI.track(event)
+    rescue
+      puts "Couldn't connect to AmplitudeAPI"
     end
+  end
 end
