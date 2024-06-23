@@ -32,8 +32,8 @@ event = AmplitudeAPI::Event.new({
 
 
 wasted time will never come back type regret
- 1. u decide to watch it
 
+ 1. u decide to watch it
  x chances of nutting
  x deep regret
  x waste of time
@@ -50,99 +50,12 @@ wasted time will never come back type regret
  x less waste
  x no pain
  x no ruin of innocense
+ x have to control it
+ x no pleasure, but the biggest pleasure is having no regrets!
 
 
-yes u watched it.
-to test.
-now u know.
-Watching it has only one ending.
+What happened happened. Now
+Focus on work.
 
-so what to do? nut?
-no
-
-just take a bath?
-
-time is still wasted whether u do whatever
-take a bath
-
-go there?
-
-yes
-
-nut? and go there? regret nut to there
-how many times?
-
-
-kuch bhi hojayeg don't do this
-
-and don't waste time
- also don't little
- goal is to never do it.don
-
-
-clearly the variant 2 is the winner.
-
-3. watch it, little wet, control time but it's hardly possible,
-wash it, get to work
-
-(chances of nutting)
-(maithun)
-(time waste)
-(rabbit hole)
-
-
-watch a woman picture nothing more.
-
-
-watch boobies 
-
-(nutting)
-
-
-watch in full cover (wet)
-(Chances)
-
-wash it
-
-she takes off wet 
-(chances)
-
-waste of time
-
-Man wants to watch. Ethically i shouldn't 
-
-at the end of the day man wins. Always. Always.
-
-
-you can see it's gonna cost u.
-
-if u have to be saved. You need to sacrifice something.new
-Otherwise u can't.
-
-are u sure this is the thing u want?
-
-u can still be saved
-
-then ull lie about this.
-
-everytime.
-
-if u want to be saved
-
-u have to give this up
-
-u will do it 10000 it wont help
-
-  after watching her u want this and u will nutting
-  u saw it right?
-
-  now why don't u close it?
-
-  ab toh dekh liya ab kyu nah ian bhar rha?
-  wo chahiye na tab 
-
-
-  so basically avoid watching anything..
-  otherwise... it's end result is this.don
-  which i wanna avoid
-  no matter what anyone say
+You know how u got this right? U did this for amazing period. Do it again.
+Honestly. THere is no pleasure in that.

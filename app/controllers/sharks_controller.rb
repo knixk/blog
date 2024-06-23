@@ -8,6 +8,7 @@ class SharksController < ApplicationController
 
   # GET /sharks/1 or /sharks/1.json
   def show
+    print("showing sharks")
   end
 
   # GET /sharks/new
@@ -26,6 +27,16 @@ class SharksController < ApplicationController
     respond_to do |format|
       if @shark.save
         track_event('shark_created', @shark)
+        identifyUser("adsasd343f24234123f34", "12938172938")
+
+        # user_properties = AmplitudeAPI::UserProperties.new({
+        #   properties: { "favorite_color" => "blue" }
+        # })
+
+        # AmplitudeAPI.set_user_properties(user_properties)
+
+        p 'user props set'
+
         format.html { redirect_to shark_url(@shark), notice: "Shark was successfully created." }
         format.json { render :show, status: :created, location: @shark }
       else
@@ -95,4 +106,17 @@ class SharksController < ApplicationController
       puts "Couldn't connect to AmplitudeAPI"
     end
   end
+
+  def identifyUser(user_id, device_id)
+    idfy = AmplitudeAPI::Identification.new(
+      user_id: user_id,
+      device_id: device_id,
+      user_properties: {
+        "$set" => { "age" => 30 }
+      }
+    )
+    AmplitudeAPI.identify(idfy)   
+    p "user idfied"
+  end
+
 end
